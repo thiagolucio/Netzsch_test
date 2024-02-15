@@ -19,8 +19,8 @@ function Logo({ logoLayout, width, height, textSize, comaSize }: LogoProps) {
             style={logoStyle}
             priority
           />
-          <div className={`inline-block slogan-font text-gray-950 font-light text-[${textSize}]`}>
-            Proven Excellence<b className={`text-green-700 text-[${comaSize}] mb-0`}>&#9209;</b>
+          <div className={`inline-block slogan-font text-gray-950 font-light text-[${textSize}px]`}>
+            Proven Excellence<b className={`text-green-700 text-[${comaSize}px] mb-0`}>&#9209;</b>
           </div>
         </div>
       ) : (
@@ -34,8 +34,8 @@ function Logo({ logoLayout, width, height, textSize, comaSize }: LogoProps) {
             style={logoStyle}
             priority
           />
-          <div className={`inline-block slogan-font text-gray-950 font-light text-[${textSize}]`}>
-            Proven Excellence<b className={`text-green-700 text-[${comaSize}] mb-0`}>&#9209;</b>
+          <div className={`inline-block slogan-font text-gray-950 font-light text-[${textSize}px]`}>
+            Proven Excellence<b className={`text-green-700 text-[${comaSize}px] mb-0`}>&#9209;</b>
           </div>
         </div>
       )}
