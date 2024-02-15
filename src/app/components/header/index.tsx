@@ -4,13 +4,11 @@ import Logo from "../logo/index";
 
 function Header() {
   return (
-    <div className="w-full h-[70px] flex items-stretch justify-between pr-4 bg-white">
-      <div className="flex items-center">
-        <Link href="/">
-          <Logo width={160} height={40} logoLayout={false} textSize={20} comaSize={5} />
+    <div className="w-full h-[70px] flex items-stretch justify-between px-4 bg-white">
+        <Link href="/" className="flex items-start justify-center mt-4">
+          <Logo width={160} height={32} logoLayout={true} textSize={29} comaSize={5} />
         </Link>
         {/* <ConvertComponent /> */}
-      </div>
     </div>
   );
 }
