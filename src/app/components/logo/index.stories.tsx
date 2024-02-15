@@ -9,12 +9,12 @@ const meta: Meta<typeof Logo> = {
     logoLayout: true,
     width: 140,
     height: 40,
-    textSize: `20`,
-    comaSize: `4`,
+    textSize: 20,
+    comaSize: 4,
   },
   argTypes: {
     logoLayout: {
-        control: { type: 'select' },
+        control: { type: 'boolean' },
         options: [true, false],
     },
     width: {
@@ -24,10 +24,10 @@ const meta: Meta<typeof Logo> = {
         control: { type: 'number' },
     },
     textSize: {
-        control: { type: 'text' },
+        control: { type: 'number' },
     },
     comaSize: {
-        control: { type: 'text' },
+        control: { type: 'number' },
     },
   },
   parameters: {
