@@ -6,7 +6,7 @@ function Logo({ logoLayout, sloganLayout, width, height, textSize, comaSize }: L
       {logoLayout ? (
         <div className={`flex flex-col justify-start`}>
           <Image
-            src="/logoNoSlogan.svg"
+            src="/netzsch-logo.svg"
             alt="Netzsch Logo"
             title="Netzsch Logo Vertical"
             width={width ? width : 128}
@@ -22,7 +22,7 @@ function Logo({ logoLayout, sloganLayout, width, height, textSize, comaSize }: L
       ) : (
         <div className="flex justify-start items-center gap-2">
           <Image
-            src="/logoNoSlogan.svg"
+            src="/netzsch-logo.svg"
             alt="Netzsch Logo"
             title="Netzsch Logo Horizontal"
             width={width ? width : 128}
