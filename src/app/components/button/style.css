@@ -1,0 +1,63 @@
+.success {
+    background: var(--hexa-success)
+}
+
+.success:hover,
+.success:focus,
+.success:active {
+    background: #246e42;
+}
+
+.primary {
+    background: var(--hexa-primary)
+}
+
+.primary:hover,
+.primary:focus,
+.primary:active {
+    background: #0390c4;
+}
+
+.alert {
+    background: var(--hexa-alert)
+}
+
+.alert:hover,
+.alert:focus,
+.alert:active {
+    background: #a13a3a;
+}
+
+.disabled {
+    background: var(--hexa-disabled);
+    color: #999999;
+}
+
+.disabled:hover,
+disabled:focus {
+    background: var(--hexa-disabled);
+    cursor: not-allowed;
+}
+
+.default {
+    background: var(--hexa-default)
+}
+
+.default:hover,
+.default:focus,
+.default:active {
+    background: #b68303;
+}
+
+.light {
+    background: var(--hexa-light);
+    color: #8d8e8f;
+}
+
+.light:hover,
+.light:focus,
+.light:active {
+    background: rgb(219, 219, 219);
+    color: #6c6d6d;
+
+}

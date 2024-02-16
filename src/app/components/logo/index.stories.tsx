@@ -7,6 +7,7 @@ const meta: Meta<typeof Logo> = {
   tags: ["autodocs"],
   args: {
     logoLayout: true,
+    sloganLayout: true,
     width: 140,
     height: 40,
     textSize: 20,
@@ -14,6 +15,10 @@ const meta: Meta<typeof Logo> = {
   },
   argTypes: {
     logoLayout: {
+        control: { type: 'boolean' },
+        options: [true, false],
+    },
+    sloganLayout: {
         control: { type: 'boolean' },
         options: [true, false],
     },
@@ -32,7 +37,6 @@ const meta: Meta<typeof Logo> = {
   },
   parameters: {
     layout: "fullscreen",
-    
   },
 };
 
@@ -41,7 +45,11 @@ type Logo = StoryObj<typeof meta>;
 export const Default: Logo = {
     
     render: (args: LogoProps) => {
-        return <Logo {...args} />;
+        return (
+          <div className="p-10">
+            <Logo {...args} />
+          </div>
+        );
     },
 };
 
