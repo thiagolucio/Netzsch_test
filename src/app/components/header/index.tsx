@@ -4,9 +4,9 @@ import Logo from "../logo/index";
 
 function Header() {
   return (
-    <div className="w-full h-[70px] flex items-stretch justify-between px-4 bg-white">
+    <div className="w-full fixed h-[70px] flex items-stretch justify-between px-4 bg-transparent">
         <Link href="/" className="flex items-start justify-center mt-4">
-          <Logo width={160} height={32} logoLayout={true} textSize={29} comaSize={5} sloganLayout={true} />
+          <Logo width={160} height={32} textSize={29} comaSize={5} logoLayout sloganLayout />
         </Link>
         {/* <ConvertComponent /> */}
     </div>

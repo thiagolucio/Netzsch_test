@@ -13,11 +13,11 @@ function Logo({ logoLayout, sloganLayout, width, height, textSize, comaSize }: L
             height={height? height : 40}
             priority
           />
-          {sloganLayout ? (
-            <span className={`slogan-font text-gray-950 font-light`} style={{fontSize: textSize}}>
+          {sloganLayout && (
+            <span className={`slogan-font text-gray-950 font-light`} style={{fontSize: textSize ? textSize : 10}}>
               Proven Excellence<b className={`text-green-700 mb-0`} style={{fontSize: comaSize}}>&#9209;</b>
             </span>            
-          ): null}
+          )}
         </div>
       ) : (
         <div className="flex justify-start items-center gap-2">
@@ -29,11 +29,11 @@ function Logo({ logoLayout, sloganLayout, width, height, textSize, comaSize }: L
             height={height? height : 40}
             priority
           />
-          {sloganLayout ? (
-            <span className={`slogan-font text-gray-950 font-light`} style={{fontSize: textSize}}>
-              Proven Excellence<b className={`text-green-700 mb-0`} style={{fontSize: comaSize}}>&#9209;</b>
+          {sloganLayout && (
+            <span className={`slogan-font text-gray-950 font-light`} style={{fontSize: textSize ? textSize : 10}}>
+              Proven Excellence<b className={`text-green-700 mb-0`} style={{fontSize: comaSize ? comaSize : 2}}>&#9209;</b>
             </span>            
-          ): null}
+          )}
         </div>
       )}
     </>

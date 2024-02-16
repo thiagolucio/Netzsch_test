@@ -1,10 +1,10 @@
 type LogoProps = {
-    logoLayout: boolean;
-    sloganLayout: boolean;
-    width: number;
-    height: number;
-    textSize: number;
-    comaSize: number;
+    logoLayout?: boolean;
+    sloganLayout?: boolean;
+    width?: number;
+    height?: number;
+    textSize?: number;
+    comaSize?: number;
 }
 
 type ButtonProps = {
