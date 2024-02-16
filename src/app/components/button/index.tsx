@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 function Button({ variant, type, children, ...props }: ButtonProps) {
   return (

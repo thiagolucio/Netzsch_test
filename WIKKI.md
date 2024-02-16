@@ -34,6 +34,11 @@
       ButtonText
     </Button>
 ```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `variant` | `string array's` | Options from button styles - "default" | "primary" | "success" | "alert" | "disabled" | "light" - default = default  |
+| `type` | `button string array's` | Options from button html type to replicate - "button" | "submit" | "reset"  |
+| `children` | `text` | The Button Text |
 
 - All properties that should be used in a Button can be used.
 - The buttons are full width (100%). You must control its width using a container or div.
