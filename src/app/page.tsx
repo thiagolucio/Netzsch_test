@@ -1,62 +1,13 @@
 import Header from "./components/header";
+import Dashboard from "./dashboard/page";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-        <h2 className="text-slate-800">CONTEUDO</h2>
-      </main>
+      <div className="w-full h-full bg-white">
+        <Dashboard />
+      </div>
     </>
   );
 }
