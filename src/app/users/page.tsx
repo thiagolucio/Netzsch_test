@@ -1,10 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { RiEdit2Fill, RiDeleteBack2Fill, RiUserAddLine } from "react-icons/ri";
-import { IoArrowBackSharp } from "react-icons/io5";
 import { FaFaceGrimace } from "react-icons/fa6";
+import { MdDelete } from "react-icons/md";
+import { RiUserAddLine } from "react-icons/ri";
+import { FaTrash, FaUserEdit } from "react-icons/fa";
+
 import Loading from "../loading";
+import Button from "../components/button";
 
 function Users() {
   const [users, setUsers] = useState<User[]>([]);
@@ -32,12 +35,23 @@ function Users() {
 
   const deleteUser = async (id: number) => {
     try {
-      await fetch(process.env.API + `/delete_user/${id}`, {
+      await fetch(process.env.API + `/user/${id}`, {
         method: "DELETE",
       });
       getUsers();
     } catch (error) {
       console.error("Error deleting user:", error);
+    }
+  };
+
+  const editUser = async (id: number) => {
+    try {
+      await fetch(process.env.API + `/user/${id}`, {
+        method: "PATCH",
+      });
+      getUsers();
+    } catch (error) {
+      console.error("Error editing user:", error);
     }
   };
 
@@ -50,36 +64,100 @@ function Users() {
   }
 
   return (
-    <div className="flex gap-5 flex-wrap items-center justify-center w-full h-full py-36">
-      {users.length > 0 ? (
-        users.map((user) => (
-          <div
-            key={user.id}
-            className="md:w-1/1 lg:w-1/4 h-[600px] rounded-lg bg-customSuccess text-white justify-start"
-          >
-            <img
-              src={user.avatar}
-              alt="Avatar"
-              className="border border-gray-500 rounded-full bg-white"
-              width={80}
-              height={80}
-            />
-            <div className="p-4 rounded-lg">{user.id}</div>
-            <div className="p-4 rounded-lg">{user.username}</div>
-            <div className="p-4 rounded-lg">{user.first_name}</div>
-            <div className="p-4 rounded-lg">{user.last_name}</div>
-            <div className="p-4 rounded-lg">{user.gender}</div>
-            <div className="p-4 rounded-lg">{user.email}</div>
-            <div className="p-4 rounded-lg">{user.cep}</div>
-            <div className="p-4 rounded-lg">{user.ip_address}</div>
+    <div className="w-full h-full max-w-[1400px] flex flex-col py-36">
+      <Link
+        href="/users/new"
+        className="text-white p-2 place-items-end self-end mx-40 mb-6"
+      >
+        <Button variant="default" type="button">
+          <RiUserAddLine
+            className="text-white text-xl mr-3"
+            title="Create New User"
+          />{" "}
+          Create New user
+        </Button>
+      </Link>
+      <div className="flex gap-5 flex-wrap items-center justify-center w-full h-full">
+        {users.length > 0 ? (
+          users.map((user) => (
+            <div
+              key={user.id}
+              className="md:w-1/1 lg:w-1/4 h-[450px] rounded-xl bg-customSuccess text-white justify-start p-5 shadow-md"
+            >
+              <div className="w-full flex flex-col items-center justify-center p-4">
+                <img
+                  src={user.avatar}
+                  alt={`Avatar from ${user.username}`}
+                  title={`Avatar from ${user.username}`}
+                  className="border border-gray-500 rounded-full bg-customLight"
+                  width={100}
+                  height={100}
+                />
+                <div className="text-customDefault text-xl font-bold">
+                  {user.username}
+                </div>
+                <div className="text-sm">{user.email}</div>
+              </div>
+              <div className="flex justify-around">
+                <div className="flex flex-col p-4">
+                  <h4 className="font-extrabold text-customDefault">
+                    First Name
+                  </h4>
+                  {user.first_name}
+                </div>
+                <div className="flex flex-col p-4">
+                  <h4 className="font-extrabold text-customDefault">
+                    Last Name
+                  </h4>
+                  {user.last_name}
+                </div>
+              </div>
+              <div className="flex justify-around">
+                <div className="flex flex-col p-4">
+                  <h4 className="font-extrabold text-customDefault">
+                    ZIP CODE
+                  </h4>
+                  {user.cep ? (
+                    <>{user.cep}</>
+                  ) : (
+                    <span className="text-red-700 font-bold">Not provided</span>
+                  )}
+                </div>
+                <div className="flex flex-col p-4">
+                  <h4 className="font-extrabold text-customDefault">IP</h4>
+                  {user.ip_address}
+                </div>
+              </div>
+              <div className="flex w-full h-[50px] my-3 gap-3 items-center justify-center">
+                  <button
+                    type="button"
+                    className="p-4 rounded-full hover:cursor-pointer transition ease-in-out delay-150 bg-customAlert hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300"
+                    onClick={() => deleteUser(user.id)}
+                  >
+                    <FaTrash className="text-white text-xl" title="Delete User" />
+                  </button>
+
+                <Link href={`/users/${user.id}`}>
+                  <button
+                    type="button"
+                    className="p-4 rounded-full transition ease-in-out delay-150 bg-customDefault hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"
+                  >
+                    <FaUserEdit
+                      className="text-white text-xl"
+                      title="Edit User"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="w-full flex  items-center justify-center text-slate-400 text-6xl">
+            <FaFaceGrimace className="text-8xl mr-3" />
+            <h1 className="roboto-font-700">No Users found</h1>
           </div>
-        ))
-      ) : (
-        <div className="w-full flex  items-center justify-center text-slate-400 text-6xl">
-          <FaFaceGrimace className="text-8xl mr-3" />
-          <h1 className="roboto-font-700">No Users found</h1>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

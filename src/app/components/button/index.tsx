@@ -1,5 +1,7 @@
 'use client'
 
+import "./style.css";
+
 function Button({ variant, type, children, ...props }: ButtonProps) {
   return (
     <button

@@ -2,6 +2,7 @@
 const nextConfig = {
     env: {
         API: process.env.API,
+        JSONPLACEHOLDER: process.env.JSONPLACEHOLDER
     },
     async headers() {
         return [

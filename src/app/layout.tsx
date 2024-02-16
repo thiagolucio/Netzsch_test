@@ -5,7 +5,7 @@ import "./globals.css";
 const roboto = Roboto_Condensed({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Netzsch App",
+  title: "Netzsch | test",
   description: "A small test from Netzsch",
 };
 
