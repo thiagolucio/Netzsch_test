@@ -15,7 +15,7 @@
 .primary:hover,
 .primary:focus,
 .primary:active {
-    background: #0390c4;
+    background: #3dc6f8;
 }
 
 .alert {
@@ -59,5 +59,14 @@ disabled:focus {
 .light:active {
     background: rgb(219, 219, 219);
     color: #6c6d6d;
+}
 
+.link {
+    background: none;
+    border: 2px solid var(--hexa-success);
+    color: var(--hexa-success);
+}
+
+.link:hover {
+    background: var(--hexa-success);
 }

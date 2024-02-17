@@ -64,12 +64,12 @@ function Users() {
   }
 
   return (
-    <div className="w-full h-full max-w-[1400px] flex flex-col py-36">
+    <div className="w-full h-full max-w-[1400px] flex flex-col py-36 bg-customSuccess">
       <Link
         href="/users/new"
-        className="text-white p-2 place-items-end self-end mx-40 mb-6"
+        className="text-white p-2 mb-6 xs:mx-32 md:mx-64"
       >
-        <Button variant="default" type="button">
+        <Button variant="primary" type="button">
           <RiUserAddLine
             className="text-white text-xl mr-3"
             title="Create New User"
@@ -82,7 +82,7 @@ function Users() {
           users.map((user) => (
             <div
               key={user.id}
-              className="md:w-1/1 lg:w-1/4 h-[450px] rounded-xl bg-customSuccess text-white justify-start p-5 shadow-md"
+              className="xs:w-96 md:w-1/1 lg:w-1/4 h-[450px] rounded-xl bg-white text-gray-500 justify-start p-5 shadow-md"
             >
               <div className="w-full flex flex-col items-center justify-center p-4">
                 <img
@@ -93,20 +93,20 @@ function Users() {
                   width={100}
                   height={100}
                 />
-                <div className="text-customDefault text-xl font-bold">
+                <div className="text-customSuccess text-xl font-bold">
                   {user.username}
                 </div>
                 <div className="text-sm">{user.email}</div>
               </div>
               <div className="flex justify-around">
                 <div className="flex flex-col p-4">
-                  <h4 className="font-extrabold text-customDefault">
+                  <h4 className="font-extrabold text-customSuccess">
                     First Name
                   </h4>
                   {user.first_name}
                 </div>
                 <div className="flex flex-col p-4">
-                  <h4 className="font-extrabold text-customDefault">
+                  <h4 className="font-extrabold text-customSuccess">
                     Last Name
                   </h4>
                   {user.last_name}
@@ -114,7 +114,7 @@ function Users() {
               </div>
               <div className="flex justify-around">
                 <div className="flex flex-col p-4">
-                  <h4 className="font-extrabold text-customDefault">
+                  <h4 className="font-extrabold text-customSuccess">
                     ZIP CODE
                   </h4>
                   {user.cep ? (
@@ -124,7 +124,7 @@ function Users() {
                   )}
                 </div>
                 <div className="flex flex-col p-4">
-                  <h4 className="font-extrabold text-customDefault">IP</h4>
+                  <h4 className="font-extrabold text-customSuccess">IP</h4>
                   {user.ip_address}
                 </div>
               </div>
@@ -140,7 +140,7 @@ function Users() {
                 <Link href={`/users/${user.id}`}>
                   <button
                     type="button"
-                    className="p-4 rounded-full transition ease-in-out delay-150 bg-customDefault hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"
+                    className="p-4 rounded-full transition ease-in-out delay-150 bg-customDefault hover:-translate-y-1 hover:scale-110 hover:bg-yellow-700 duration-300"
                   >
                     <FaUserEdit
                       className="text-white text-xl"
