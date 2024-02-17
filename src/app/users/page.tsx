@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaFaceGrimace } from "react-icons/fa6";
-import { MdDelete } from "react-icons/md";
 import { RiUserAddLine } from "react-icons/ri";
 import { FaTrash, FaUserEdit } from "react-icons/fa";
 

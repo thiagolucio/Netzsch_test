@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "api": "json-server --watch ./backend/db.json --port 4000"
   },
   "dependencies": {
     "lottie-react": "^2.4.0",
@@ -16,6 +17,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "recharts": "^2.12.0",
     "swr": "^2.2.5"
   },
   "devDependencies": {
@@ -38,6 +40,7 @@
     "eslint-config-next": "14.1.0",
     "eslint-plugin-storybook": "^0.6.15",
     "i": "^0.3.7",
+    "json-server": "^1.0.0-alpha.23",
     "msw-storybook-addon": "^1.10.0",
     "npm": "^10.4.0",
     "postcss": "^8",
