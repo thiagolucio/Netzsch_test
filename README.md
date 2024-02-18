@@ -9,7 +9,7 @@
 # Netzsch test from Offer - Instructions:
 
 1) Clone Project:
-- Clone this repo with ` git clone https://github.com/thiagolucio/Netzsch_test.git `
+- Clone this repo with ```bash git clone https://github.com/thiagolucio/Netzsch_test.git ```
 
 2) Install Packages:
 - Run `npm install --legacy-peer-deps` to install node_modules with 100% compatible between packages and their own dependencies.   
@@ -26,15 +26,17 @@
 
 
 ### Documentation (reusable components):
-[![Wikki](WIKKI.md)](WIKKI.md)
+- I created a simple documentation model for implementing reusable components and they can be seen in the project root.
+[Wikki](WIKKI.md)
+
+
 
 
 ### Comments about:
-- Procurei trabalhar com a última versão do NextJS como indicado na documentação oficial do React ![ReactJS Start New Project](https://react.dev/learn/start-a-new-react-project).
+- Procurei trabalhar com a última versão do NextJS como indicado na documentação oficial do React [ReactJS Start New Project](https://react.dev/learn/start-a-new-react-project).
 - I decided to create my own backend (API) based on the solution pointed out in the document sent and thus not depend on any external solution or connection.
 - This project was not created to run in production and was made for technical evaluation only (a POC).
 - Both Storybook and Jest do not cover the entire project, just a few examples were created to demonstrate knowledge in implementing and configuring.
-- I created a simple documentation model for implementing reusable components and they can be seen in the project root.
 - The graph from **"Rechart"** presented is simple, just to demonstrate knowledge, and is not a reusable component, which in some cases would be normal to be done in a real project.
 
 
