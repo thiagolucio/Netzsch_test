@@ -1,9 +1,14 @@
 import type {Config} from 'jest';
 import nextJest from 'next/jest.js'
+import {defaults} from 'jest-config';
 
 const createJestConfig = nextJest({
   dir: './',
 })
+
+module.exports = {
+  "testEnvironment": "jsdom"
+}
 
 const config: Config = {
   clearMocks: true,
@@ -19,7 +24,6 @@ const config: Config = {
     "/node_modules/",
     "/.next/"
   ],
-
 };
 
 export default createJestConfig(config);

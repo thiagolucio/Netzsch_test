@@ -29,6 +29,17 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--hexa-success);
+  font-weight: 700;
+}
+
+h1 {font-size: 3em}
+h2 {font-size: 1.5em}
+h3 {font-size: 1em}
+h4 {font-size: 0.85em}
+h5 {font-size: 0.75em}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
