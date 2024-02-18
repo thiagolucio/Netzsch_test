@@ -26,7 +26,7 @@
 
 ### Documentation (reusable components):
 - I create simple documentation regarding reusable components that can be seen here through the [Wikki](WIKKI.md) file within the project root.
-- 
+  
 ### Comments about:
 - I tried to work with the latest version of NextJS as indicated in the official React documentation [ReactJS Start New Project](https://react.dev/learn/start-a-new-react-project)
 

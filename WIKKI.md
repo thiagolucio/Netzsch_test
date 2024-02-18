@@ -11,7 +11,7 @@
     ...
     <Logo width={160} height={32} textSize={29} comaSize={5} logoLayout sloganLayout />
     <p>"OR"</p>
-    <Logo width={160} height={32} textSize={29} comaSize**={5} logoLayout={false} sloganLayout={false} />
+    <Logo width={160} height={32} textSize={29} comaSize={5} logoLayout={false} sloganLayout={false} />
 ```
 
 | Parameter | Type     | Description                |
@@ -38,7 +38,7 @@
 | :-------- | :------- | :------------------------- |
 | `variant` | `string array's` | Options from button styles - "default" | "primary" | "success" | "alert" | "disabled" | "light" - default = default  |
 | `type` | `button string array's` | Options from button html type to replicate - "button" | "submit" | "reset"  |
-| `children` | `text` | The Button Text |
+| `children` | `text` | The Button Text/ Icon + Text or other desired content |
 
 - All properties that should be used in a Button can be used.
 - The buttons are full width (100%). You must control its width using a container or div.

@@ -63,7 +63,7 @@ function Users() {
   }
 
   return (
-    <div className="w-full h-full max-w-[1400px] flex flex-col py-36 bg-customSuccess">
+    <div className="w-full h-full flex flex-col py-36 bg-customSuccess">
       <Link
         href="/users/new"
         className="text-white p-2 mb-6 xs:mx-32 md:mx-64"
