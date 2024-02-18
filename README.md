@@ -27,13 +27,18 @@
 
 ### Documentation (reusable components):
 - I created a simple documentation model for implementing reusable components and they can be seen in the project root.
+
+<br>
+
 [Wikki](WIKKI.md)
 
 
 
 
 ### Comments about:
-- Procurei trabalhar com a última versão do NextJS como indicado na documentação oficial do React [ReactJS Start New Project](https://react.dev/learn/start-a-new-react-project).
+- Procurei trabalhar com a última versão do NextJS como indicado na documentação oficial do React:
+  <br />
+  [ReactJS Start New Project](https://react.dev/learn/start-a-new-react-project).
 - I decided to create my own backend (API) based on the solution pointed out in the document sent and thus not depend on any external solution or connection.
 - This project was not created to run in production and was made for technical evaluation only (a POC).
 - Both Storybook and Jest do not cover the entire project, just a few examples were created to demonstrate knowledge in implementing and configuring.
