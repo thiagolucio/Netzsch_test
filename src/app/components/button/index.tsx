@@ -2,7 +2,7 @@
 
 import "./style.css";
 
-function Button({ variant, type, children, testID, ...props }: ButtonProps) {
+function Button({ variant, type, children, ...props }: ButtonProps) {
   return (
     <button
       type={type}

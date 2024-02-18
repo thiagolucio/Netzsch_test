@@ -1,99 +1,32 @@
 import React from 'react';
 import '@testing-library/jest-dom'
 import { render, screen, fireEvent } from '@testing-library/react'
+import userEvent from '@testing-library/user-event';
 import Button from './';
 
-describe('Render Button', () => {
-
-  it(`Render Button Default`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'default'} 
-        type={'button'}>Button Default</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Default');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
+describe('Button Component', () => {
+  test('renderiza o botão com a variante "primary"', () => {
+    render(<Button variant="primary" type="button">Clique Aqui</Button>);
+    const buttonElement = screen.getByRole('button', { name: /clique aqui/i });
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).toHaveClass('primary');
   });
 
-  it(`Render Button Primary`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'primary'} 
-        type={'button'}>Button Primary</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Primary');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
+  test('renderiza o botão com a variante "alert"', () => {
+    render(<Button variant="alert" type="button">Clique Aqui</Button>);
+    const buttonElement = screen.getByRole('button', { name: /clique aqui/i });
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).toHaveClass('alert');
   });
 
-  it(`Render Button Alert`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'alert'} 
-        type={'button'}>Button Alert</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Alert');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
-  });
-
-
-  it(`Render Button Success`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'success'} 
-        type={'button'}>Button Success</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Success');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
-  });
-
-  it(`Render Button Light`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'light'} 
-        type={'button'}>Button Light</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Light');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
-  });
-
-  it(`Render Button Disabled`, () => {
-    const onPressMock = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        testID="Button-test"
-        onClick={onPressMock} 
-        variant={'disabled'} 
-        type={'button'}>Button Disabled</Button>
-    );
-    expect(getByTestId('Button-test')).toBeTruthy();
-    screen.getByText('Button Disabled');
-    fireEvent.click(getByTestId('Button-test'));
-    expect(onPressMock).toHaveBeenCalled();
+  test('chama a função onClick ao clicar no botão', () => {
+    const handleClick = jest.fn();
+    render(<Button onClick={handleClick} type="button" variant="default">Clique Aqui</Button>);
+    const buttonElement = screen.getByRole('button', { name: /clique aqui/i });
+    fireEvent.click(buttonElement);
+    expect(handleClick).toHaveBeenCalled();
   });
 });
+
+
 

@@ -12,7 +12,6 @@ type ButtonProps = {
     type: "button" | "submit" | "reset";
     children: React.ReactNode;
     onClick?: () => void;
-    testID: string;
 };
 
 type User = {
@@ -23,11 +22,10 @@ type User = {
     email: string;
     first_name: string;
     last_name: string;
-    gender?: string;
+    gender: string;
     ip_address: string;
     cep: string;
 }
-
 
 // Interfaces
 
@@ -40,7 +38,7 @@ interface UserProps {
     email: string,
     first_name: string,
     last_name: string,
-    gender?: string,
+    gender: string,
     ip_address: string,
     cep: string,
 }
