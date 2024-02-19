@@ -42,3 +42,7 @@ interface UserProps {
     ip_address: string,
     cep: string,
 }
+
+interface SuccessMessageProps {
+    message: string;
+}

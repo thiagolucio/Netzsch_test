@@ -1098,6 +1098,18 @@
       "gender": "Male",
       "ip_address": "96.77.55.251",
       "cep": "68164"
+    },
+    {
+      "id": "",
+      "username": "thiagoluio",
+      "password": "123434",
+      "email": "thiagolucio@gmail.com",
+      "avatar": "https://thiagolucio.com.br/tt",
+      "first_name": "Thiago",
+      "last_name": "Silva",
+      "gender": "Male",
+      "ip_address": "192.168.0.27",
+      "cep": "88000-000"
     }
   ]
 }
