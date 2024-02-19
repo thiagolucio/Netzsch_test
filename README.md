@@ -8,19 +8,19 @@
 
 # Netzsch test from Offer - Instructions:
 
-### 1) Clone Project `git clone https://github.com/thiagolucio/Netzsch_test.git `
+#### 1) Clone Project `git clone https://github.com/thiagolucio/Netzsch_test.git `
 
-### 2) Install Packages: `npm install`
+#### 2) Install Packages: `npm install`
  
 ### 3) Run Project: 
 - Run `npm run api` to run local API Mock from Project
 - Run `npm run dev`to run local Client Front-end Project.
 
-## 4) Validate/ Tests:
+#### 4) Validate/ Tests:
 - Run `npm run storybook`to run local Storybook and open browser intarface to taste components.
 - Run `npm run test`to run Jest tests from project.
 
-### 5) Documentation (reusable components):
+#### 5) Documentation (reusable components):
 
 - I create simple documentation regarding reusable components that can be seen here through the [Wikki](WIKKI.md) file within the project root.
 
