@@ -1,11 +1,11 @@
-"use client";
-
+'use client'
 import Button from "../components/button";
 import GenderChart from "../components/genderChart";
 import { useEffect, useState } from "react";
 
 import { FaCheckCircle } from "react-icons/fa";
 import Logo from "../components/logo";
+import ConvertComponent from "../components/temperature";
 
 function Dashboard() {
   const [users, setUsers] = useState<User[]>([]);
@@ -73,6 +73,9 @@ function Dashboard() {
         <div className="w-full my-12 justify-center flex font-bold">
           <h2>Please. Take a look at documentation WIKKI and README to know more...</h2>
         </div>
+      </div>
+      <div className="w-full flex flex-col m-3">
+        {/* <ConvertComponent /> */}
       </div>
     </main>
   );

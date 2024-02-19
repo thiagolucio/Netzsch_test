@@ -3,7 +3,6 @@ import Logo from "../logo/index";
 
 import { MdDashboard } from "react-icons/md";
 import { HiUsers } from "react-icons/hi2";
-// import ConvertComponent from "../temperature";
 
 function Header() {
   return (
@@ -42,7 +41,6 @@ function Header() {
           </button>
         </Link>
       </div>
-      {/* <ConvertComponent /> */}
     </div>
   );
 }

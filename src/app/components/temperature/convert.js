@@ -77,7 +77,7 @@ if (ENVIRONMENT_IS_NODE) {
   // TODO: Swap all `require()`'s with `import()`'s?
   // These modules will usually be used on Node.js. Load them eagerly to avoid
   // the complexity of lazy-loading.
-  var fs = require('fs');
+  // var fs = require('fs');
   var nodePath = require('path');
 
   if (ENVIRONMENT_IS_WORKER) {
