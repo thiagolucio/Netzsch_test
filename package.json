@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "api": "json-server --watch ./backend/db.json --port 4000",
+    "api": "json-server --watch ./public/db.json --port 4000",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci"
