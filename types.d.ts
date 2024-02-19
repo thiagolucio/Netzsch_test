@@ -14,30 +14,31 @@ type ButtonProps = {
     onClick?: () => void;
 };
 
+type User = {
+    id: Key | number;
+    username: string;
+    password?: string;
+    avatar: string;
+    email: string;
+    first_name: string;
+    last_name: string;
+    gender: string;
+    ip_address: string;
+    cep: string;
+}
 
 // Interfaces
-type User = {
-    id: Key | number,
-    username: string,
-    password: string,
-    avatar: string,
-    email: string,
-    first_name: string,
-    last_name: string,
-    gender: string,
-    ip_address: string,
-    cep: string
-}
+
 
 interface UserProps {
     id: Key | number,
     username: string,
-    password: string,
+    password?: string,
     avatar: string,
     email: string,
     first_name: string,
     last_name: string,
     gender: string,
     ip_address: string,
-    cep: string
+    cep: string,
 }
