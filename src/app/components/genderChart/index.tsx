@@ -37,7 +37,7 @@ const GenderChart = ({ gender }: { gender: { gender: string }[] }) => {
   }, [gender]);
 
   return (
-    <div className="w-full h-full bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4">
+    <div className="w-full h-full bg-white rounded-lg flex flex-col items-center justify-center p-4">
       <h2 className="text-xl text-customSuccess font-bold">Gender Occurrences</h2>
       <BarChart
         width={500}

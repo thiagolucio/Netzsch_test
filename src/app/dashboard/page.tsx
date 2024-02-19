@@ -36,10 +36,7 @@ function Dashboard() {
       <div className="w-full flex justify-center p-4">
         <GenderChart gender={users} />
       </div>
-      <div className="w-full flex flex-col m-3">
-        <h3 className="text-3xl text-slate-800">
-          Components - <small>Reusabled</small>{" "}
-        </h3>
+      <div className="w-full flex flex-col mx-3 my-8">
         <div className="w-full flex items-center justify-around gap-4">
           <Button variant="primary" type="submit">
             Button Primary

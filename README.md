@@ -9,19 +9,24 @@
 # Netzsch test from Offer - Instructions:
 
 1) Clone Project:
-- Clone this repo with ```bash git clone https://github.com/thiagolucio/Netzsch_test.git ```
+- Clone this repo with:
+ ```bash 
 
-2) Install Packages:
-- Run `npm install --legacy-peer-deps` to install node_modules with 100% compatible between packages and their own dependencies.   
+    git clone https://github.com/thiagolucio/Netzsch_test.git 
 
-3) Run Project: 
-- Run `npm run api` to run local API Mock from Project
-- Run `npm run dev`to run local Client Front-end Project.
+```
 
-4) Validate/ Tests:
+1) Install Packages:
+- Run ` npm install ` to install node_modules with 100% compatible between packages and their own dependencies.   
 
-- Run `npm run storybook`to run local Storybook and open browser intarface to taste components.
-- Run `npm run test`to run Jest tests from project.
+1) Run Project: 
+- Run ` npm run api ` to run local API Mock from Project
+- Run ` npm run dev `to run local Client Front-end Project.
+
+1) Validate/ Tests:
+
+- Run ` npm run storybook `to run local Storybook and open browser intarface to taste components.
+- Run ` npm run test `to run Jest tests from project.
 
 
 ### Documentation (reusable components):
