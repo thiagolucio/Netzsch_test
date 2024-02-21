@@ -1,18 +1,6 @@
 {
   "user": [
     {
-      "id": "1",
-      "username": "rstooke0",
-      "password": "$2a$04$QCNd5iGmHIah/yVZVhPNiO/898noPxzlUpgD0YKEgTIX8s0YAQkWa",
-      "avatar": "https://robohash.org/perspiciatisvoluptatemaut.png?size=80x80&set=set1",
-      "email": "rstooke0@hubpages.com",
-      "first_name": "Randie",
-      "last_name": "Stooke",
-      "gender": "Female",
-      "ip_address": "186.163.130.137",
-      "cep": "187327"
-    },
-    {
       "id": "2",
       "username": "gtough1",
       "password": "$2a$04$mdHmAdjWIK6KThcIc8sXYOWCIVd/vZeiHt5LpSZko5lDServ6Ewxy",
@@ -114,18 +102,6 @@
       "last_name": "Gennings",
       "gender": "Genderfluid",
       "ip_address": "122.57.82.178"
-    },
-    {
-      "id": "15",
-      "username": "lwraightee",
-      "password": "$2a$04$2.GJf6Ngh/ryqKbPNmW84..DxIueVjW0Rwsnsgmi25pMWH5Jrmybu",
-      "avatar": "https://robohash.org/architectoillumquas.png?size=80x80&set=set1",
-      "email": "lwraightee@boston.com",
-      "first_name": "Lexis",
-      "last_name": "Wraighte",
-      "gender": "Female",
-      "ip_address": "44.185.78.82",
-      "cep": "368328"
     },
     {
       "id": "16",
@@ -1110,6 +1086,15 @@
       "gender": "Male",
       "ip_address": "192.168.0.27",
       "cep": "88000-000"
+    },
+    {
+      "id": "007c",
+      "username": "novo_usuario",
+      "password": "senha123"
+    },
+    {
+      "id": "a957",
+      "username": "Renato Thomaz da Silva"
     }
   ]
 }

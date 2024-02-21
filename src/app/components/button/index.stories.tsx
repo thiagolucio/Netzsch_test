@@ -5,7 +5,6 @@ import "./style.css";
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
   component: Button,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
   args: {
     variant: "primary",
@@ -26,7 +25,6 @@ const meta: Meta<typeof Button> = {
     },
   },
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "fullscreen",
   },
 };

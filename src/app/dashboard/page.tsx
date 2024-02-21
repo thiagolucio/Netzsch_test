@@ -72,7 +72,7 @@ function Dashboard() {
         </div>
       </div>
       <div className="w-full flex flex-col m-3">
-        {/* <ConvertComponent /> */}
+        <ConvertComponent />
       </div>
     </main>
   );
