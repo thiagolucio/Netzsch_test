@@ -17,8 +17,8 @@
 - Run `npm run dev`to run local Client Front-end Project.
 
 #### 4) Validate/ Tests:
-- Run `npm run storybook`to run local Storybook and open browser intarface to taste components.
-- Run `npm run test`to run Jest tests from project.
+- Run `npm run storybook`to run local Storybook and open browser interface to taste components.
+- Run `npm run test`to run Jest tests from the project.
 
 #### 5) Documentation (reusable components):
 
