@@ -21,9 +21,9 @@ const GenderChart = ({ gender }: { gender: { gender: string }[] }) => {
         let femaleCount = 0;
 
         gender.map((user) => {
-          if (user.gender.toLowerCase() === "male") {
+          if (user.gender === "Male") {
             maleCount++;
-          } else if (user.gender.toLowerCase() === "female") {
+          } else if (user.gender === "Female") {
             femaleCount++;
           }
         });
